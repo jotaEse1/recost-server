@@ -26,7 +26,7 @@ const priceList = require('./routes/priceList'),
 
 //middlewares
 app.use(cors({
-    origin: 'https://jotaese1.github.io',  
+    origin: ['https://jotaese1.github.io', "http://localhost:3000"],  
     credentials: true,
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
     "preflightContinue": false,
